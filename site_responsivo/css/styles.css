@@ -1,0 +1,41 @@
+h1 {
+    color: red;
+}
+
+/* 2- Sintaxe*/
+@media screen and (max-width: 500px) {
+    h1 {
+        color: blue;
+    }
+}
+
+/* 3- Outros modos */
+/* screen, print, speech, all */
+
+@media print and (max-width: 600px) {
+    h1 {
+        color: green;
+    }
+}
+
+/* 4- Todos modos */
+@media (max-width: 700px) {
+    h2 {
+        color: purple;
+    }
+}
+
+/* 5- Mobile first */
+/* min-width > max-width */
+@media (min-width: 200px) {
+    h2 {
+        color: teal;
+    }
+}
+
+/* 6- And na media Qquery */
+@media (min-width: 300px) and (max-width: 400px) {
+    h3 {
+        font-size: 3em;
+    }
+}
