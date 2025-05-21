@@ -11,6 +11,10 @@
             text-align: center;
         }
 
+        #modalDialog::backdrop {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
         #modalDialog {
             border: 2px solid black;
             background-color: tan;
@@ -19,11 +23,11 @@
         }
 
         #modalDialog h2 {
-            color: darkblue;
+            color: black;
             text-align: center;
         }
 
-        #modalDialog button {
+        #modalDialog #closeButton {
             position: absolute;
             bottom: 10px;
             left: 10px;
@@ -31,7 +35,7 @@
             cursor: pointer;
         }
 
-        #modalDialog button:hover {
+        #modalDialog #closeButton:hover {
             background-color: antiquewhite;
             border: 0;
             font-weight: bold;
@@ -45,6 +49,11 @@
     <!-- Tag dialog = modal -->
      <dialog id="modalDialog">
         <h2>Formulário de contato</h2>
+        <form id="modalForm">
+            <label for="email">Insira seu e-mail aqui:</label>
+            <input type="email" placeholder="E-mail">
+            <button type="submit">Enviar</button>
+        </form>
         <button id="closeButton">Fechar</button>
      </dialog>
 
@@ -60,6 +69,25 @@
         closeButton.addEventListener("click", (e) => {
             dialog.close();
         })
+
+        const modalForm = document.querySelector("#modalForm");
+        modalForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            console.log("Enviando dados...")
+        })
+
+        dialog.addEventListener("click", (event) => {
+            const rect = dialog.getBoundingClientRect();
+            //Verifica se o clique está fora da área do formulário
+            if(
+                event.clientX < rect.left ||
+                event.clientX > rect.right ||
+                event.clientY < rect.top ||
+                event.clientY > rect.botton
+            ) {
+                dialog.close();
+            }
+        });
      </script>
 </body>
 </html>
