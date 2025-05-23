@@ -1,3 +1,93 @@
-h1 {
-    color: red;
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.box {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* 1. Position: static */
+/* O elemento segue o fluxo normal da página */
+.static-container {
+  background-color: #f0f0f0;
+  height: 100px;
+}
+
+.static-box {
+  /* position: static; */ /* Posição padrão, não precisa ser declarada */
+  position: static;
+}
+
+/* 2- Position: relative */
+.relative-box {
+    position: relative;
+    top: 50px;
+}
+
+/* 3- Position: absolute */
+.absolute-container {
+    position: relative;
+    border: 1px solid red;
+    height: 400px;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 50px;
+    right: 100px;;
+}
+
+/* 4- Position: fixed */
+.fixed-box {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+}
+
+/* 5- Position: Sticky */
+.sticky-box {
+    position: sticky;
+    top: 50px;
+}
+
+/* 6- Exemplo de z-index */
+.z-index-container {
+    position: relative;
+    height: 300px;
+    border: 1px solid red;
+}
+
+.z-index-box1, 
+.z-index-box2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.z-index-box1 {
+    left: 20px;
+    top: 20px;
+    background-color: red;
+    z-index: 2;
+}
+
+.z-index-box2 {
+    z-index: 1;
 }
