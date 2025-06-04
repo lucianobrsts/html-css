@@ -21,6 +21,15 @@ class Calculator {
 
     // Process all calculator operation
     processOperation(operation) {
+        // check if current is empty
+        if(this.currentOperationText.innerText === "") {
+            // change operation
+            if(this.currentOperationText.innerText !== "") {
+                this.changeOperation(operation);
+            }
+            return;
+        }
+
         // Get current and previos values
         let operationValue;
         const previous = +this.previousOperationText.innerText.split(" ")[0];
@@ -29,6 +38,18 @@ class Calculator {
         switch(operation) {
             case "+":
                 operationValue = previous + current;
+                this.updatescreen(operationValue, operation, current, previous);
+                break;
+            case "-":
+                operationValue = previous - current;
+                this.updatescreen(operationValue, operation, current, previous);
+                break;
+            case "/":
+                operationValue = previous / current;
+                this.updatescreen(operationValue, operation, current, previous);
+                break;
+            case "*":
+                operationValue = previous * current;
                 this.updatescreen(operationValue, operation, current, previous);
                 break;
             default:
@@ -43,8 +64,6 @@ class Calculator {
         current = null,
         previous = null
     ) {
-        console.log(operationValue, operation, current, previous)
-
         if(operationValue === null) {
             this.currentOperationText.innerText += this.currentOperation;
         } else {
@@ -56,6 +75,18 @@ class Calculator {
             this.previousOperationText.innerText = `${operationValue} ${operation}`
             this.currentOperationText.innerText = "";
         }
+    }
+
+    // change math operation
+    changeOperation(operation) {
+        const mathOperations = ["*", "+", "-", "/"]
+
+        if(!mathOperations.includes(operation)) {
+            return;
+        }
+
+        this.previousOperationText.innerText = 
+        this.previousOperationText.innerText.slice(0, -1) + operation;
     }
 }
 
