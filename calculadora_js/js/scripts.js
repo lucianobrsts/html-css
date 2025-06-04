@@ -23,17 +23,41 @@ class Calculator {
     processOperation(operation) {
         // Get current and previos values
         let operationValue;
-        let previous = +this.previousOperationText.innerText
-        let current = +this.currentOperationText.innerText
+        const previous = +this.previousOperationText.innerText.split(" ")[0];
+        const current = +this.currentOperationText.innerText
+
+        switch(operation) {
+            case "+":
+                operationValue = previous + current;
+                this.updatescreen(operationValue, operation, current, previous);
+                break;
+            default:
+                return;
+        }
     }
 
     // change values of the calculator screen
-    updatescreen() {
-        this.currentOperationText.innerText += this.currentOperation;
+    updatescreen(
+        operationValue = null,
+        operation = null,
+        current = null,
+        previous = null
+    ) {
+        console.log(operationValue, operation, current, previous)
+
+        if(operationValue === null) {
+            this.currentOperationText.innerText += this.currentOperation;
+        } else {
+            // check if value is zero, if it is just add current value
+            if(previous === 0) {
+                operationValue = current
+            }
+            // add current value to previous
+            this.previousOperationText.innerText = `${operationValue} ${operation}`
+            this.currentOperationText.innerText = "";
+        }
     }
 }
-
-
 
 const calc = new Calculator(previousOperationText, currentOperationText);
 
