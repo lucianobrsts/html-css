@@ -11,8 +11,20 @@ class Calculator {
 
     // add digit to calculator screen
     addDigit(digit) {
+        // check if current operation already has a dot
+        if(digit === "." && this.currentOperationText.innerText.includes(".")) {
+            return;
+        }
         this.currentOperation = digit
         this.updatescreen()
+    }
+
+    // Process all calculator operation
+    processOperation(operation) {
+        // Get current and previos values
+        let operationValue;
+        let previous = +this.previousOperationText.innerText
+        let current = +this.currentOperationText.innerText
     }
 
     // change values of the calculator screen
@@ -32,7 +44,7 @@ buttons.forEach((btn) => {
        if(+value >= 0 || value === ".") {
         calc.addDigit(value);
        } else {
-        console.log("Op: " + value);
+        calc.processOperation(value);
        }
     })
 })
