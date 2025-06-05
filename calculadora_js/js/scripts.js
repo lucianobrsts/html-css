@@ -52,6 +52,9 @@ class Calculator {
                 operationValue = previous * current;
                 this.updatescreen(operationValue, operation, current, previous);
                 break;
+            case "DEL":
+                this.processDelOperator();
+                break;
             default:
                 return;
         }
@@ -79,7 +82,7 @@ class Calculator {
 
     // change math operation
     changeOperation(operation) {
-        const mathOperations = ["*", "+", "-", "/"]
+        const mathOperations = ["*", "+", "-", "/"];
 
         if(!mathOperations.includes(operation)) {
             return;
@@ -87,6 +90,10 @@ class Calculator {
 
         this.previousOperationText.innerText = 
         this.previousOperationText.innerText.slice(0, -1) + operation;
+    }
+
+    processDelOperator() {
+
     }
 }
 
