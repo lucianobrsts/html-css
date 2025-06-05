@@ -33,7 +33,7 @@ class Calculator {
         // Get current and previos values
         let operationValue;
         const previous = +this.previousOperationText.innerText.split(" ")[0];
-        const current = +this.currentOperationText.innerText
+        const current = +this.currentOperationText.innerText;
 
         switch(operation) {
             case "+":
