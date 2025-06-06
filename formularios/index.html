@@ -8,5 +8,82 @@
 </head>
 <body>
     <h1>Formulário Completo em HTML</h1>
+
+    <!-- Criar o formulário -->
+    <!-- action => para onde os dados vão -->
+    <!-- method => como o form vai ser enviado -->
+      <form action="/registro" method="POST">
+        <!-- Inputs = entradas -->
+         <label for="nome">Nome:</label>
+         <input type="text" name="nome" required placeholder="Digite o seu primeiro nome">
+        
+         <label for="email">Email:</label>
+         <input type="email" name="email" placeholder="Digite o seu email">
+
+         <label for="senha">Senha:</label>
+         <input type="password" name="senha" placeholder="Digite sua senha">
+
+        <!-- Texto mais longo -->
+         <label for="mensagem">Mensagem:</label>
+         <textarea name="mensagem" placeholder="Digite o que você achou do sistema"></textarea>
+
+        <!-- Formas de seleção -->
+        <!-- Quero selecionar algo, mas quero exibir todas as opções, mas só quero selecionar 1 -->
+        <h2>Preferências</h2>
+        <p>Gênero</p>
+        
+        <input type="radio" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" value="Feminino">
+        <label for="feminino">Feminino</label>
+        <input type="radio" name="genero" value="Outro">
+        <label for="outro">Outro</label>
+
+        <!-- Pode selecionar mais de 1 -->
+         <p>Interesse</p>
+         <input type="checkbox" name="interesse" value="Música">
+         <label for="musica">Música</label>
+         <input type="checkbox" name="interesse" value="Esporte">
+         <label for="esporte">Esporte</label>
+         <input type="checkbox" name="interesse" value="Viagem">
+         <label for="viagem">Viagem</label>
+
+         <!-- quero esconder as opções, limitar 1 -->
+        <label for="cidade">Cidade:</label>
+        <select name="cidade">
+            <option value="">Selecione sua cidade</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Florianopoles">Florianopoles</option>
+            <option value="Rio de janeiro">Rio de Janeiro</option>
+            <option value="Fortaleza">Fortaleza</option>
+            <option value="Natal">Natal</option>
+        </select>
+
+        <!-- tipos HTML 5 -->
+         <label for="data_nascimento">Data de Nascimento:</label>
+         <input type="date" name="data_nascimento">
+
+         <label for="hora_contato">Selecione o horário:</label>
+         <input type="time" name="hora_contato">
+
+         <label for="cor">Selecione a cor:</label>
+         <input type="color" name="cor">
+
+         <!-- Envio de arquivos -->
+        <div>
+              <input type="file" name="arquivo" accept=".pdf, .png">
+        </div>
+    
+        <div>
+            <input type="file" name="arquivo" accept=".pdf, .png" multiple>
+        </div>
+            
+        <!-- Botão ação = submit -->
+        <!-- <input type="submit" value="Enviar"> -->
+         <div>
+             <button type="submit">Enviar</button>
+             <button type="reset">Limpar formulário</button>
+         </div>
+        </form>
 </body>
 </html>
