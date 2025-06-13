@@ -93,6 +93,10 @@ body {
     align-self: end;
 }
 
+.flex {
+    display: flex;
+}
+
 @media (max-width: 768px) {
     html {
         font-size: 12px;    
@@ -105,4 +109,13 @@ body {
     .hamburger {
         display: block;
     }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: calc(100% - 70px);
 }
