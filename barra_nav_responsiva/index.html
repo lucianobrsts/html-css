@@ -6,6 +6,7 @@
     <title>Barra de nav. responsiva</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js" defer></script>
+    <script src="https://kit.fontawesome.com/b1118be399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -16,8 +17,23 @@
             <li><a href="#">Login</a></li>
         </ul>
         <div class="mobile-menu" id="mobilemenu">
-            
+            <button class="close" id="closebutton">
+                <i class="fas fas-times"></i>
+            </button>
+
+            <ul class="nav-links-mobile">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
         </div>
+        <button class="hamburger" id="hamburgerButton">
+            <i class="fas fas-bars"></i>
+        </button>
     </nav>
+    <div class="containeer">
+        <h1>Veja as paisagens do Mundo!</h1>
+        <button>Quero conhecer!</button>
+    </div>
 </body>
 </html>
