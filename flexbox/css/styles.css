@@ -15,3 +15,117 @@ h2 {
     padding-bottom: 10px;
 }
 
+/* Como se ativa o flex */
+.container-flex {
+    display: flex;
+    background-color: #eee;
+    /* Espaçamento de itens do flex */
+    gap: 10px;
+}
+
+.item-flex {
+    background-color: #2196f3;
+    color: #fff;
+    padding: 15px;
+}
+
+/* Possíveis direções */
+.direcao-linha {
+    flex-direction: row;
+}
+
+.direcao-coluna {
+    flex-direction: column;
+}
+
+/* Quebra de linha = wrap */
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+/* Alinhamento na horizontal */
+.justificar-fim {
+    justify-content: flex-end;
+}
+
+.justificar-centro {
+    justify-content: center;
+}
+
+.justificar-space-between {
+    justify-content: space-between;
+}
+
+.justificar-space-around {
+    justify-content: space-around;
+}
+
+.justificar-space-evenly {
+    justify-content: space-evenly;
+}
+
+/* Alinhamento vertical */
+.align-items .container-flex {
+    height: 300px;
+}
+
+.alinhar-inicio {
+    align-items: start;
+}
+
+.alinhar-fim {
+    align-items: end;
+}
+
+.alinhar-centro {
+    align-items: center;
+}
+
+.alinhar-baseline {
+    align-items: baseline;
+}
+
+.alto {
+    height: 100px;
+}
+
+.baixo {
+    height: 30px;
+}
+
+.container-flex.exemplo-align-self {
+    height: 200px;
+    align-items: start;
+}
+
+.self-centro {
+    align-self: center;
+}
+
+.self-fim {
+    align-self: end;
+}
+
+/* Navbar - Menu */
+.menu-nav {
+    display: flex;
+    background-color: #333;
+    gap: 10px;
+    justify-content: center;
+}
+
+.menu-nav a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.menu-nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
