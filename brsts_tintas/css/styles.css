@@ -3,3 +3,57 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    background-color: #5a7262;
+    position: fixed;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-header {
+    width: 80%;
+}
+
+.logo {
+    width: 80%;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo span {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.subtitulo {
+    display: flex;
+    color: #fff;
+    font-size: 1rem;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.menu-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: center;
+    width: 80%;
+}
+
+.menu-nav a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.menu-nav a:hover {
+    color: #e4b7a0;
+}
