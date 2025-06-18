@@ -26,16 +26,21 @@
             <input type="email" name="address">
         </div>
 
+        <label for="generalEnquiry" class="generalEnquiryLabel">Query Types *</label>
         <div class="queryTypes">
-            <div class="firstName">
-                <label for="firstName">First Name *</label>
-                <input type="text" name="firstName">
+            <div class="generalEnquiry">
+                <input type="checkbox" name="generalEnquiry">
+                <label for="address">General Enquiry</label>
             </div>
 
-            <div class="lastName">
-                <input type="text" name="lastName">
+            <div class="supportRequest">
+                <input type="checkbox" name="supportRequest">
+                <label for="address">General Enquiry</label>
             </div>
         </div>
+
+        <label for="message" class="messageLabel">Message *</label>
+        <textarea name="message" class="message"></textarea>
     
     </form>
 </body>

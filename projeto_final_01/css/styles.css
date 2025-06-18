@@ -29,3 +29,37 @@ label {
     border-radius: 10px;
     width: 100%;
 }
+
+.queryTypes {
+    display: flex;
+    gap: 20px;
+}
+
+.queryTypes label {
+    margin-left: 10px;
+}
+
+.generalEnquiryLabel {
+    margin: 20px 20px 20px 0px;
+}
+
+.generalEnquiry, 
+.supportRequest {
+    width: 100%;
+    border: 2px solid #000;
+    border-radius: 10px;
+    align-items: center;
+    padding: 20px 10px;
+    display: flex;
+}
+
+.messageLabel {
+    margin: 20px 20px 20px 0px;
+}
+
+.message {
+    width: 100%;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
