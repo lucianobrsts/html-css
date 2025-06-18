@@ -16,9 +16,7 @@ header {
 
 .container {
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     background-color: #fdf2ec;
     width: 50%;
     height: auto;
@@ -34,5 +32,13 @@ header {
     background-image: url("../img/omelete.jpg");
     background-position: center;
     background-size: cover;
+}
+
+.titulo {
+    margin: 20px 20px 20px 0;
+}
+
+.container p {
+    font-size: 0.8rem;
 }
 
