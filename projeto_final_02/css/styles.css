@@ -3,17 +3,36 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 2rem;
     font-weight: 700;
     margin: 30px;
 }
 
-main {
-    
+.container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdf2ec;
+    width: 50%;
+    height: auto;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
 }
+
+.omelete-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    background-image: url("../img/omelete.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
