@@ -42,23 +42,30 @@ header {
     margin: 20px 20px 20px 0;
 }
 
-.info-cooked p {
+.info-cooked p,
+.ingredients p {
     color: #5c3c4a;
     font-size: 1.3rem;
     font-weight: 500;
     margin-left: 20px;
 }
 
-.info-cooked span {
-    font-weight: bold;
-    font-size: 0.8rem;
-}
-
-.info-cooked li {
+.info-cooked li,
+.ingredients li {
     font-size: 0.8rem;
     margin-bottom: 10px;
     color: #5c3c4a;
 }
+
+.ingredients p {
+    margin: 0;
+}
+
+.ingredients ul {
+    padding: 15px;
+}
+
+
 
 
 
