@@ -25,6 +25,10 @@ header {
     padding: 20px;
 }
 
+.container p {
+    font-size: 0.8rem;
+}
+
 .omelete-img {
     width: 100%;
     height: 300px;
@@ -38,7 +42,24 @@ header {
     margin: 20px 20px 20px 0;
 }
 
-.container p {
+.info-cooked p {
+    color: #5c3c4a;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.info-cooked span {
+    font-weight: bold;
     font-size: 0.8rem;
 }
+
+.info-cooked li {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: #5c3c4a;
+}
+
+
+
 
