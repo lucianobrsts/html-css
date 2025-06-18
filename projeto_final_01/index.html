@@ -29,18 +29,25 @@
         <label for="generalEnquiry" class="generalEnquiryLabel">Query Types *</label>
         <div class="queryTypes">
             <div class="generalEnquiry">
-                <input type="checkbox" name="generalEnquiry">
+                <input type="radio" name="generalEnquiry">
                 <label for="address">General Enquiry</label>
             </div>
 
             <div class="supportRequest">
-                <input type="checkbox" name="supportRequest">
+                <input type="radio" name="supportRequest">
                 <label for="address">General Enquiry</label>
             </div>
         </div>
 
         <label for="message" class="messageLabel">Message *</label>
         <textarea name="message" class="message"></textarea>
+
+        <div class="consent">
+            <input type="checkbox" name="supportRequest">
+            <label for="address">I consent to being contacted by the team</label>
+        </div>
+
+        <input type="button" value="Submit">
     
     </form>
 </body>
