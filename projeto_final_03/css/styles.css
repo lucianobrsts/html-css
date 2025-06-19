@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #1f1f1f;
+    width: 30%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.avatar {
+    background-image: url("../img/pessoa.jpg");
+    background-size: cover;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}

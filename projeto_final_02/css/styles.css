@@ -86,6 +86,25 @@ header {
     margin-top: 20px;
 }
 
+.table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    margin-top: 20px;
+}
+
+.table .column1,
+.table .column2 {
+    font-size: 0.8rem;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
 
 
 
