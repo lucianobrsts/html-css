@@ -12,8 +12,77 @@ body {
 .container {
     background-color: #fff;
     width: 30%;
-    height: 500px; 
+    height: 440px; 
     border-radius: 15px;
     border: 2px solid #000;
     box-shadow: 5px 8px 0px 1px  #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    background-image: url("../img/imagem.png");
+    background-size: cover;
+    background-position: center;
+    width: 95%;
+    height: 200px;
+    margin: 15px 10px 15px 10px;
+    border-radius: 10px;
+}
+
+.learning {
+    background-color: #f0c976;
+    border: none;
+    width: 30%;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #000;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.learning:hover {
+    background-color: #000;
+    color: #f0c976;
+    font-weight: 600;
+}
+
+.date {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 0 10px 10px;
+}
+
+.text {
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.info-criator {
+    display: flex;
+    align-items: center;
+}
+
+.info-criator span {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.criator {
+    background-image: url("../img/pessoa.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    margin: 20px 10px 20px 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
 }
