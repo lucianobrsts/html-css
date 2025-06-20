@@ -24,7 +24,7 @@ body {
     border-radius: 50px;
     width: 100px;
     height: 100px;
-    margin: 15px;
+    margin: 30px 15px 15px 15px;
 }
 
 .name {
@@ -47,7 +47,16 @@ body {
 
 .redirect {
     background-color:#333 ;
+    color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 10px 100px;
+    margin: 5px;
+    padding: 10px 20px;
+    width: 80%;
+}
+
+.redirect:hover {
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
 }
